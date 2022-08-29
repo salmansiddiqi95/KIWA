@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <title>KIWA PHOTOGRAPHY</title>
+</head>
+
+<body onload="BackgroundLayerChange()">
+    <nav class="navbar">
+        <a href="/" class="navbar__logo">KIWA PhotoGraphy</a>
+    </nav>
+    <div class="main">
+        <div class="main__container">
+            <div class="main__container--text">
+                <h1>We Build Memories</h1>
+                <h2>Quality Over Quantity</h2>
+                <p>Book Your Shoot</p>
+                <button class="main__container--btn">
+                    <a href="#">Make Booking</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__copyright">
+            <p>Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> Your Name All Rights Reserved
+            </p>
+        </div>
+        <div class="footer__instagram">
+            <a class="footer__instagram--ancortag" href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer__twitter">
+            <a class="footer__twitter--ancortag" href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="footer__linkedin">
+            <a class="footer__linkedin--ancortag" href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="footer__codepen">
+            <a class="footer__codepen--ancortag" href="#"><i class="fa fa-codepen"></i></a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function BackgroundLayerChange() {
+        let colorCode = [
+            "112 101 99 / 50%",
+            "149 35 14 / 50%",
+            "24 48 24 / 50%",
+            "11 203 247 / 50%",
+            "163 203 41 / 50%",
+        ];
+
+        let className = document.getElementsByClassName("main");
+        let randomNumber = Math.floor(Math.random() * 5);
+        for (let i = 0; i < className.length; i++) {
+            className[i].style.boxShadow = "inset 0 0 0 1000px rgb("+colorCode[randomNumber]+")"
+        }
+    }
+</script>
+
+</html>

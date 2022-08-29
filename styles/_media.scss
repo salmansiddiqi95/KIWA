@@ -1,0 +1,19 @@
+@mixin tablet {
+    @media  screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media  screen and (max-width: 280px){
+        @content;
+    }
+}
+
+@mixin socialicons {
+    position: absolute;
+    line-height: 50px;
+    color: $color-white;
+    margin-top: 2%;
+    animation: exampleall 1s linear;
+}

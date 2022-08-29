@@ -1,0 +1,27 @@
+@import 'colors';
+
+.navbar {
+    background: $dark;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 10;
+    position: relative;
+    padding: 1rem calc((146vw - 1200px) / 2);
+
+    &__logo {
+        color: $color-green;
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 8px;
+        cursor: pointer;
+        align-content: center;
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+    &__logo:hover {
+        color: $color-red;
+    }
+}
