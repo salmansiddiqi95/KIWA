@@ -172,11 +172,11 @@
 }
 .main__container--text {
   width: 100%;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 @media screen and (max-width: 768px) {
   .main__container--text {
-    padding: 7rem 0;
+    padding: 5rem 0;
   }
 }
 @media screen and (max-width: 280px) {
@@ -216,9 +216,9 @@
 .main__container--btn {
   font-size: 1rem;
   background-color: #18D6A6;
-  padding: 17px 32px;
+  padding: 14px 32px;
   border: none;
-  border-radius: 7px;
+  border-radius: 4px;
   color: #fcf8f8;
   margin-top: 2rem;
   position: relative;
